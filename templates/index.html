@@ -1,0 +1,86 @@
+{{define "layout"}}
+<!doctype html>
+<html lang="en">
+<head> <!-- Defines the head of our website -->
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href={{.Background}} />
+    <link rel="stylesheet" href="{{.Color}}" />
+    <title>Ascii-Art</title>
+</head>
+<body>
+    <form method="POST" action="/">
+        <header>
+            <div class="logo"> <!-- Displays our logo on top of the website -->
+                <h1><img src="/img/asciiblack.png"></h1>
+            </div>
+            
+            <div class="dropdown"> <!-- Creates a dropdown menu for our theme color choice -->
+                <ul>
+                    <li><a ><i class="fa"></i><img src="/img/themeblack.png"></a>
+                        <div class="project">
+                            <ul>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="white"><img src="img/white.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="dark"><img src="img/dark.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="blue" ><img src="img/blue.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="darkblue"><img src="img/darkblue.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="green"><img src="img/green.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="darkgreen"><img src="img/darkgreen.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="purple"><img src="img/purple.png"></input></a></li>
+                                <li><a href="#"><input type="submit" name="BackGroundColor" id="BackGroundColor" value="darkpurple"><img src="img/darkpurple.png"></input></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="drop">
+            <div class="form">
+                <div class="container">
+                    <div class="selecteurs">
+                        <select class="colorlist" name="Color" id="Color"> <!-- Dropdown menu for our colour selection -->
+                            <optgroup class="Couleur">
+                                <option value="black">Black</option>
+                                <option value="silver">Silver</option>
+                                <option value="gray">Gray</option>
+                                <option value="red">Red</option>
+                                <option value="maroon">Maroon</option>
+                                <option value="lime">Lime</option>
+                                <option value="green">Green</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="olive">Olive</option>
+                                <option value="blue">Blue</option>
+                                <option value="navy">Navy</option>
+                                <option value="fuschia">Fuschia</option>
+                                <option value="purple">Purple</option>
+                                <option value="aqua">Aqua</option>
+                                <option value="teal">Teal</option>
+                            </optgroup>
+                        </select> 
+                        <select class="fontlist" name="Fontlist" id="Fontlist"> <!-- Dropdown menu for our font selection -->
+                            <optgroup class = "Font">
+                                <option value="standard">Standard</option>
+                                <option value="shadow">Shadow</option>
+                                <option value="thinkertoy">Thinkertoy</option>
+                            </optgroup>
+                        </select>  
+                        
+                    </div>
+                    <div class="textzone">
+                        <label for="Text"></label>
+                        <input autocomplete="off" class="inbtn" type="text" name="Text" id="Text" value="{{.Text}}"></input>
+                    </div>
+                    <div class="buttons">
+                        <button class="custom-btn btn-5"><span>RUN</span></button>
+                    </div>
+                    <a class="custom-btn btn-7 download" type="submit" href="/data/ascii.txt" download="ascii-art.txt"
+                        loading="eager">DOWNLOAD
+                    </a>
+                        <textarea class="textoutput" cols="100" readonly rows="10" wrap="OFF" value=""> {{.Output}}</textarea>
+                </div>
+            </div>  
+        </div>  
+    </form>
+</body>
+</html>
+
+{{end}}

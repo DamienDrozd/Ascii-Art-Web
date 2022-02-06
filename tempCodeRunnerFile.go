@@ -1,0 +1,1 @@
+err := http.ListenAndServe(":8080", nil) // Starts the server on port 8080

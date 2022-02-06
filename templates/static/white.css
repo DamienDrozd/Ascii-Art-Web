@@ -1,0 +1,396 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header
+{
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+    color: rgb(0, 0, 0);
+    height: 71px;
+    top: 0px;
+}
+
+.logo
+{
+    height:75px;
+    width:400px;
+    margin: auto;
+}
+
+.logo h1
+{
+    text-align: center;
+    margin: 0px;
+    padding: 5px 0 0 0;
+}
+
+
+
+
+
+
+.project input
+{
+    background: none;
+    border: none;
+    font-size: 100%;
+    padding: 6px 12px;
+}
+
+.project img
+{
+    float: right;
+}
+
+.dropdown
+{
+    text-align: center;
+    float: right;
+    
+}
+
+.fa
+{
+    float: right;
+    
+}
+
+.dropdown ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.dropdown ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+.dropdown ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown .fa
+{
+    margin-right: 8px;
+    
+}
+
+.project
+{
+    display: none;
+}
+.dropdown ul li:hover .project
+{
+    display: block;
+    position: absolute;
+    background: #b8b8b8;
+    margin-top: 5px;
+    margin-left: -100px;
+}
+.dropdown ul li:hover .project ul
+{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li:hover .project ul li
+{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px double black;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+
+
+
+
+body
+{
+    background-color:#f1f1f1;
+}
+
+.drop
+{
+    height: 1.3em;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 130px;
+}
+
+.drop .container
+{
+    margin: auto;
+    width: 50%;
+    height: 20rem;
+    max-width: 50%;
+    max-height: 20%;
+    background-color: white;
+    box-shadow: 0px 10px 35px;
+}
+
+
+
+
+
+
+
+.colorlist
+{
+    padding: 6px 10px;
+}
+
+.fontlist
+{
+    padding: 6px 10px;
+}
+
+.runbtn
+{
+    padding: 6px 10px;
+}
+
+.inbtn
+{
+    padding: 6px 22px;
+}
+
+
+
+textarea
+{
+    font-size: .8rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    max-width: 900px;
+    max-height: 190px;
+}
+
+
+
+
+/* css des boutons */
+
+  
+.buttons {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #353535;
+  font-size: 25px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.textoutput{
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 0px solid #888;
+  
+
+}
+
+
+.custom-btn {
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.download{
+   
+  top: 250px;
+  
+}
+
+
+.btn-5 {
+  width: 300px;
+  height: 60px;
+  font-size: 40px;
+  
+  /* line-height: 42px; */
+  padding: 0;
+  border: none;
+  background: rgb(5, 5, 5);
+background: linear-gradient(0deg, rgb(22, 22, 22) 0%, rgb(15, 15, 15) 100%);
+}
+.btn-5:hover {
+  color: #000000;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000000;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+.textzone {
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* css  de la zone de texte*/
+.selecteurs {
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selecteurs select {
+  background-color: #000000;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+
+
+.selecteurs:hover::before {
+  color: rgba(12, 12, 12, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.selecteurs select option {
+  padding: 30px;
+}
+
+
+
+
+/* 7 */
+.btn-7 {
+background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+   -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover{
+  color: rgb(12, 12, 12);
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
